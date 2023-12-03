@@ -28,17 +28,6 @@ public class Reader extends AppCompatActivity {
 
         AssetManager am = this.getAssets();
 
-
-        ArrayList<String> fileNames = null;
-        try {
-            fileNames = new ArrayList<>(Arrays.asList(am.list("texts")));
-        } catch (IOException e) {
-            throw new RuntimeException(e);
-        }
-        for (String i : fileNames) {
-            System.out.println(i);
-
-        }
         List<String> mLines;
         try {
             mLines = new ArrayList<>();
